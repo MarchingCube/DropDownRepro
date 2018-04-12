@@ -1,0 +1,23 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DropDownRepro" Width="400" SizeToContent="Height">
+  <Panel Margin="4">
+
+    <StackPanel Gap="4">
+      <TextBlock Text="Missile launch reason"/>
+      <DropDown SelectedIndex="0">
+        <DropDownItem Content="Unknown"/>
+        <DropDownItem Content="War"/>
+        <DropDownItem Content="Other"/>
+        <DropDownItem Content="No reason"/>
+      </DropDown>
+      <Button Name="Abort" Content="Abort"/>
+      <Button Name="Launch" Content="Launch"/>
+    </StackPanel>
+    
+    <Popup Name="StatusPopup" PlacementMode="Pointer">
+      <TextBlock Name="StatusText" Foreground="Red"/>
+    </Popup>
+    
+  </Panel>
+</Window>
